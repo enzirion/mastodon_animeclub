@@ -19,9 +19,9 @@ services:
     restart: always
     build: .
     env_file: .env.production
-    command: bundle exec rails s -p 8887 -b 'animedj.club'
+    command: bundle exec rails s -p 8000 -b '0.0.0.0'
     ports:
-      - "8887:8887"
+      - "8000:80000"
     depends_on:
       - db
       - redis
