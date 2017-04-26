@@ -25,4 +25,5 @@
   - body_classes ||= @body_classes
 
   %body{ class: body_classes }
+    = video_tag "background-video.mp4", :autoplay => true, :loop => true, :id => "bg"
     = content_for?(:content) ? yield(:content) : yield
