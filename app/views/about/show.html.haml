@@ -15,6 +15,7 @@
   %meta{ property: 'twitter:card', content: 'summary' }/
 
 .wrapper
+  = video_tag "background-video.mp4", :autoplay => true, :loop => true, :id => "bg"
   %h1
     = image_tag 'logo.png'
     Mastodon
